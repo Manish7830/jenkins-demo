@@ -4,5 +4,5 @@ echo "Hostname : $(hostname)"
 echo "Current Directory : $(pwd)"
 echo "Date : $(date)"
 echo "Update : Updateing the list"
-sudo apt update -y
+sudo apt-get update
 echo "Package update completed"
