@@ -19,8 +19,8 @@ pipeline {
         success {
             echo "Pipeline Pass"
             mail to : "ms2500287@gmail.com",
-            subject : "SUCCESS",
-            body : "Email Working"
+            subject : "SUCCESS : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' ",
+            body : " '${env.JOB_NAME}' Build Succeeded. \n Check Build URL : '${env.BUILD_URL}'"
         }
         failure {
             echo "pipeline fail"
